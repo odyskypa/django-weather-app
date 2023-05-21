@@ -56,8 +56,9 @@ Fo the deployment of the specific application follow the steps below:
         python manage.py runserver
     ```
 11. Shutdown the server by typing `Ctrl + C` for Windows or `Command + C` for MacOS.
-12. Initialize an AWS Elastic Beanstalk repository for handling the appllication. Start by executing the following command:
+12. Move inside the `ccbda` folder and initialize an AWS Elastic Beanstalk repository for handling the appllication. Start by executing the following commands:
     ```bash
+        cd ./ccbda
         eb init -i
     ```
     - In the instructions appearing select the following options:
@@ -74,3 +75,12 @@ Fo the deployment of the specific application follow the steps below:
     ```
         eb deploy
     ```
+16. Ultimately, for terminating the EBS service on AWS for avoiding expenses, run the following command:
+    ```
+        eb terminate
+    ```
+    Then a message like the following is appearing: 
+    
+        - `The environment "ccbda-dev" and all associated instances will be terminated. To confirm, type the environment name: ccbda-dev`
+    Type the environment name and press `Enter`
+    After some minutes the deployment will be terminated.
