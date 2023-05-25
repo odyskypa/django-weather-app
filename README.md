@@ -75,7 +75,11 @@ Fo the deployment of the specific application follow the steps below:
     ```
         eb deploy
     ```
-16. Ultimately, for terminating the EBS service on AWS for avoiding expenses, run the following command:
+16. For accessing the logging system configured by Elastic Beanstalk, run the following command:
+    ```
+        eb logs
+    ```
+17. Ultimately, for terminating the EBS service on AWS for avoiding expenses, run the following command:
     ```
         eb terminate
     ```
