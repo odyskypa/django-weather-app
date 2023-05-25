@@ -88,3 +88,7 @@ Fo the deployment of the specific application follow the steps below:
         - `The environment "ccbda-dev" and all associated instances will be terminated. To confirm, type the environment name: ccbda-dev`
     Type the environment name and press `Enter`
     After some minutes the deployment will be terminated.
+
+### Comments on Current State of the Application
+At the moment the code that integrates the QuickSight `embedURL` into the application's homepage is commented out, due to permission reasons. Although, in case the appropriate
+permissions are enabled, by removing the comments of the file [views.py](https://github.com/odyskypa/django-weather-app/blob/main/ccbda/weatherapp/views.py) and removing the return statement `return "https://publuu.com/"` of the `get_url_quicksight` function, the application is functioning properly.
